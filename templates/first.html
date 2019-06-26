@@ -1,0 +1,92 @@
+{% extends 'bootstrap/base.html' %}
+
+  {% block navbar %}
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="{{ url_for('index')}}">Stock Markets</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span>Companies and Search</span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('plot', n='Google')}}">Google </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('plot', n='Facebook')}}">Facebook</a>
+            </li>
+            <li class="nav-item active">
+                  <a class="nav-link" href="{{ url_for('plot', n='DXC')}}">DXC</a>
+            </li>
+
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('plot', n='Tesla')}}">Tesla </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('plot', n='Apple')}}">Apple</a>
+            </li>
+
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('plot', n='IBM')}}">IBM </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('plot', n='Twitter')}}">Twitter</a>
+            </li>
+            <li class="nav-item active">
+                  <a class="nav-link" href="{{ url_for('plot', n='Amazon')}}">Amazon</a>
+            </li>
+
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('plot', n='Microsoft')}}">Microsoft </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('plot', n='Dell')}}">Dell</a>
+            </li>
+            <li class="nav-item active">
+                  <a class="nav-link" href="{{ url_for('plot', n='Cisco')}}">Cisco</a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('plot', n='VmWare')}}">VmWare</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('plot', n='AMD')}}">Atos</a>
+            </li>
+            <li class="nav-item active">
+                  <a class="nav-link" href="{{ url_for('plot', n='Intel')}}">Intel</a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('plot', n='Dow Jones')}}">DowJones</a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('plot', n='Alibaba')}}">Alibaba</a>
+            </li>
+
+        </ul>
+
+        <form class="form-inline" method='GET' action="{{ url_for('search')}}">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control mr-sm-2" type="search" placeholder="Enter Stock Mark" aria-label="Search" name="sname">
+
+        </form>
+
+      </div>
+    </nav>
+  {% endblock %}
+
+
+
+  {% block content %}
+
+  {% endblock %}
+
+
+
+
+

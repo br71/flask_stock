@@ -1,0 +1,21 @@
+{% extends 'first.html' %}
+
+
+{% block content %}
+   
+  <div class="container jumbotron-fluid">
+  <link rel="stylesheet" href={{cdn_css | safe}} type="text/css" />
+  <script type="text/javascript" src={{cdn_js | safe}}></script>
+
+
+  {% for i in range(0,3) %}
+
+  <h2> {{ r[i][3] | safe }}</h2>
+  {{ r[i][0] | safe }}
+  {{ r[i][1] | safe }}
+  <br>
+
+  {% endfor %}
+
+{% endblock %}
+
