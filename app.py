@@ -64,9 +64,7 @@ def search():
     r1 = getdata.getsearch(sname)
 
 
-    if r1 != None:
-        print("NONE")
-        
+    if r1 != None:      
         cdn_js=CDN.js_files[0]
         cdn_css=CDN.css_files[0]
         return render_template("search.html",script1=r1[0],div1=r1[1],cdn_css=cdn_css,cdn_js=cdn_js,n=sname)
