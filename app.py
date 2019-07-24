@@ -38,7 +38,7 @@ def plot(n):
 
     l = {"Google":"GOOG","Facebook":"FB","DXC":"DXC","Tesla":"TSLA","Apple":"AAPL","IBM":"IBM",
             "Twitter":"TWTR","Amazon":"AMZN","Microsoft":"MSFT","Dell":"DELL","Cisco":"CSCO","VmWare":"VMW",
-            "AMD":"AMD","Intel":"INTC","Dow Jones":"^DJI","NASDAQ":"^IXIC","NYSE":"^NYA","AMEX":"^XAX","Alibaba":"BABA"}
+            "AMD":"AMD","Intel":"INTC","Dow Jones":"^DJI","NASDAQ":"^IXIC","NYSE":"^NYA","AMEX":"^XAX","Alibaba":"BABA", "Addiko Bank":"ADKO.VI"}
 
     a = l[n]
 
