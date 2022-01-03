@@ -1,4 +1,4 @@
-﻿bokeh==1.2.0
+bokeh==1.2.0
 certifi==2019.3.9
 chardet==3.0.4
 Click==7.0
@@ -13,8 +13,8 @@ lxml==4.3.4
 MarkupSafe==1.1.1
 numpy==1.16.4
 packaging==19.0
-pandas==0.24.2
-pandas-datareader==0.7.0
+pandas 
+pandas-datareader
 Pillow==7.2.0
 pyparsing==2.4.0
 python-dateutil==2.8.0
@@ -29,3 +29,4 @@ Werkzeug==0.15.4
 wrapt==1.11.1
 WTForms==2.2.1
 xlrd==1.2.0
+
