@@ -12,12 +12,11 @@ def get(n,b):
     
     now = datetime.datetime.now()
     t = str(now.strftime("%Y,%m,%d"))
+    y = int(datetime.datetime.now().year)
+    m = int(datetime.datetime.now().month)
+    d = int(datetime.datetime.now().day)
 
-    y = int(t[0:4])
-    m = int(t[6])
-    d = int(t[8:10]) 
-
-    start=datetime.datetime(2019,1,1)
+    start=datetime.datetime(2022,1,1)
     end=datetime.datetime(y,m,d)
 
     d = data.DataReader(name=n,data_source="yahoo",start=start,end=end)
@@ -76,12 +75,14 @@ def getsearch(n):
     now = datetime.datetime.now()
     t = str(now.strftime("%Y,%m,%d"))
 
-    y = int(t[0:4])
-    m = int(t[6])
-    d = int(t[8:10]) 
+    t = str(now.strftime("%Y,%m,%d"))
+    y = int(datetime.datetime.now().year)
+    m = int(datetime.datetime.now().month)
+    d = int(datetime.datetime.now().day)
 
-    start=datetime.datetime(2019,1,1)
+    start=datetime.datetime(2022,1,1)
     end=datetime.datetime(y,m,d)
+
 
     try:
 
