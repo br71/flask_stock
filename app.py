@@ -54,10 +54,12 @@ def plot(n):
 @app.route('/search/',methods=['GET'])
 def search():
 
+    # Sanitize user input
     sname = escape(request.args.get("sname"))
 
     ln = len(sname)
 
+    # User input validation
     if ln > 10 or ln == 0:
         return render_template("error.html", n="Error in search, stock mark is longer than 10 or 0")
 

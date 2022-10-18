@@ -9,9 +9,7 @@ from bokeh.resources import CDN
 def get(n,b):
 
     r = []
-    
-    now = datetime.datetime.now()
-    t = str(now.strftime("%Y,%m,%d"))
+
     y = int(datetime.datetime.now().year)
     m = int(datetime.datetime.now().month)
     d = int(datetime.datetime.now().day)
@@ -72,10 +70,6 @@ def getsearch(n):
 
     r = []
     
-    now = datetime.datetime.now()
-    t = str(now.strftime("%Y,%m,%d"))
-
-    t = str(now.strftime("%Y,%m,%d"))
     y = int(datetime.datetime.now().year)
     m = int(datetime.datetime.now().month)
     d = int(datetime.datetime.now().day)
