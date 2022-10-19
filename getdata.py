@@ -6,13 +6,16 @@ from bokeh.models.annotations import Title
 from bokeh.embed import components
 from bokeh.resources import CDN
 
+# Define start date for graph
+str_date = "2022,1,1" 
+
 def get(n,b):
 
     y = int(datetime.datetime.now().year)
     m = int(datetime.datetime.now().month)
     d = int(datetime.datetime.now().day)
 
-    start=datetime.datetime(2022,1,1)
+    start=datetime.datetime(str_date)
     end=datetime.datetime(y,m,d)
 
     d = data.DataReader(name=n,data_source="yahoo",start=start,end=end)
@@ -70,7 +73,7 @@ def getsearch(n):
     m = int(datetime.datetime.now().month)
     d = int(datetime.datetime.now().day)
 
-    start=datetime.datetime(2022,1,1)
+    start=datetime.datetime(str_date)
     end=datetime.datetime(y,m,d)
 
 
