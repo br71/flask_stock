@@ -7,7 +7,7 @@ from bokeh.embed import components
 from bokeh.resources import CDN
 
 # Define start date for graph
-str_date = "2022,1,1" 
+sy, sm, sd  = 2022, 1, 1 
 
 def get(n,b):
 
@@ -15,7 +15,7 @@ def get(n,b):
     m = int(datetime.datetime.now().month)
     d = int(datetime.datetime.now().day)
 
-    start=datetime.datetime(str_date)
+    start=datetime.datetime(sy,sm,sd)
     end=datetime.datetime(y,m,d)
 
     d = data.DataReader(name=n,data_source="yahoo",start=start,end=end)
@@ -73,7 +73,7 @@ def getsearch(n):
     m = int(datetime.datetime.now().month)
     d = int(datetime.datetime.now().day)
 
-    start=datetime.datetime(str_date)
+    start=datetime.datetime(sy,sm,sd)
     end=datetime.datetime(y,m,d)
 
 
