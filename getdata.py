@@ -8,8 +8,6 @@ from bokeh.resources import CDN
 
 def get(n,b):
 
-    r = []
-
     y = int(datetime.datetime.now().year)
     m = int(datetime.datetime.now().month)
     d = int(datetime.datetime.now().day)
@@ -67,8 +65,6 @@ def get(n,b):
 
 
 def getsearch(n):
-
-    r = []
     
     y = int(datetime.datetime.now().year)
     m = int(datetime.datetime.now().month)

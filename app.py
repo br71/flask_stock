@@ -28,14 +28,6 @@ def index():
 @app.route('/plot/<n>')
 def plot(n):
 
-    # if n == "Google":
-    #     a = "GOOG"
-
-    # elif n == "Facebook":
-    #     a = "FB"
-    # else:
-    #      a = "DXC"
-
     l = {"Google":"GOOG","Facebook":"FB","DXC":"DXC","Tesla":"TSLA","Apple":"AAPL","IBM":"IBM",
             "Twitter":"TWTR","Amazon":"AMZN","Microsoft":"MSFT","Dell":"DELL","Cisco":"CSCO","VmWare":"VMW",
             "AMD":"AMD","Intel":"INTC","Dow Jones":"^DJI","NASDAQ":"^IXIC","NYSE":"^NYA","AMEX":"^XAX","Alibaba":"BABA", "Addiko Bank":"ADKO.VI"}
